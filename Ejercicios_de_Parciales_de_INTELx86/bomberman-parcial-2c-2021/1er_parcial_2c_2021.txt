@@ -1,0 +1,28 @@
+El juego BOMBERMAN se desarrolla en un espacio dividido en sectores que pueden estar afectados por ninguna, una o más bombas. Cada bomba afecta al 
+sector en el que se encuentra y también a aquellos que se encuentran arriba, abajo y en sus laterales, formando una cruz con centro en la 
+posición de la bomba. La potencia de la bomba determina cuántas celdas en cada dirección se extiende su alcance.
+
+El espacio está determinado por una matriz de 50x50 donde cada posición representa a un sector y contiene un BPFc/s de 16 bits que almacena la 
+cantidad de bombas que lo afectan. Se dispone de un archivo llamado BOMBAS.DAT que contiene la ubicación y la potencia de las bombas.
+Cada registro del archivo está formado por los siguientes campos: 
+
+·   Fila: 2 bytes en formato carácter 
+
+·   Columna: 2 bytes en formato carácter 
+
+·   Potencia: binario de punto fijo con signo de 16 bits
+
+Se pide realizar un programa Assembler Intel que resuelva lo siguiente:
+
+a) Leer el archivo BOMBAS.DAT y por cada registro leído actualizar las celdas que son afectadas por cada bomba.
+
+b) Como los datos del archivo pueden ser incorrectos, se deberá hacer uso de rutina interna (VALREG) que deberá validar Fila, Columna y Potencia.
+Teniendo en cuenta que el alcance no caiga fuera de la matriz. Los registros inválidos serán descartados.
+
+c) Padrón PAR: Pedir por teclado el ingreso de un nro de  fila y mostrar por pantalla los nros de columna que no estén amenazadas en dicha fila
+
+Padrón IMPAR: Pedir por teclado el ingreso de un nro de columna y mostrar por pantalla los nros de fila que no estén amenazadas de dicha columna
+
+NOTA: Para aprobar el ejercicio debe tener correctamente resuelto el 60% del mismo. Las respuestas que no estén justificadas o estén mal justificadas 
+se considerarán erróneas. Por favor lea bien el enunciado
+

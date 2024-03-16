@@ -1,0 +1,19 @@
+;Se pide realizar un programa en assembler Intel que realice un ciclo donde pida por teclado la configuración hexadecimal de un número empaquetado 
+;y los valores i j correspondientes a una coordenada de una matriz (M).  El fin del ingreso por teclado se produce cuando el usuario ingresa ‘*’ en lugar 
+;del número empaquetado
+
+;La dimensión de M es 15x15 y sus elementos son números en formato binario de punto fijo con signo de 16 bits.  
+;El programa deberá descartar ingresos inválidos.  Para ello hará  uso de una rutina interna llamada VALING que 
+;validará los valores de i y j, el
+;formato del empaquetado y que el número que representa entre en el formato destino.
+;Los elementos de M que no fueron ocupados por un número ingresado por el usuario deberán ser 0.
+
+;Por último el programa deberá mostrar por pantalla la siguiente información:
+
+;Alumnos con padrón par: el valor promedio (entero) por cada columna de M.
+;Alumnos con padrón impar: el valor promedio (entero) por cada fila de M.
+
+
+;ACLARACION: cuando te dice que los tenees que guardar en la matriz, lo que tenes que hacer es guardar el numero en  base decimal, porque
+;            cuando se guarde va a estar en bpf c/s (ya que es el formato en que se guardan los valores numericos). Lo que tenes que hacer
+;            es lograr obtener ese numero que esta almacenado en el empaquetado que se ingresa
